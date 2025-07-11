@@ -1,0 +1,16 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+:root {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+  }
+  .ant-popover,
+.ant-tooltip,
+.popover-wrapper {
+  pointer-events: none !important;
+  display: none !important;
+}
+.chat-gpt-quick-query-container *{
+  display: none;
+  background-color: #000000;
+}

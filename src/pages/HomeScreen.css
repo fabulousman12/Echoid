@@ -1,0 +1,177 @@
+/* User Card Styles */
+.user-card {
+  display: flex;
+  align-items: center;
+  padding: 15px; /* Increased padding for better spacing */
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 8px; /* Rounded corners for the user card */
+  margin: 5px 0; /* Margin for spacing between cards */
+}
+
+.user-card:hover {
+  background-color: #f8f9fa; /* Highlight on hover */
+}
+
+/* Avatar Styles */
+.rounded-avatar {
+  border-radius: 50%;
+  width: 60px; /* Increased avatar size */
+  height: 60px; /* Increased avatar size */
+  object-fit: cover;
+  border: 2px solid #ddd; /* Defined border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Text Styles */
+.user-name {
+  font-weight: 500;
+  font-size: 18px; /* Increased font size */
+  color: #333;
+}
+
+.timestamp {
+  font-size: 14px; /* Increased timestamp font size */
+  color: #999;
+}
+
+.last-message {
+  font-size: 15px; /* Increased last message font size */
+  color: #666;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 70px); /* Adjusted width for more space */
+}
+
+/* Unread Badge Styles */
+.unread-badge {
+  background-color: #25d366; /* Green for unread messages */
+  color: white;
+  font-size: 14px; /* Increased badge font size */
+  padding: 4px 8px; /* Increased padding for the badge */
+  border-radius: 50%;
+  display: inline-block;
+  min-width: 24px; /* Adjusted minimum width for the badge */
+  text-align: center;
+}
+
+/* Floating Menu Styles */
+.floating-menu {
+  position: absolute;
+  top: 70px; /* Adjust to align below the header */
+  right: 20px; /* Align to the right */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 200px; /* Set a width for the menu */
+  padding: 10px 0; /* Add padding to the menu */
+  transition: opacity 0.3s ease;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #f0f2f5; /* Highlight on hover */
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+/* Footer Styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.floating-button {
+  position: fixed;
+  bottom: 200px; /* Adjust to keep it just above the footer */
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #007bff; /* Or your preferred color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.floating-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.floating-icon {
+  font-size: 24px;
+}
+.user-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiping-left {
+  transform: translateX(-50px);
+  background-color: #f8d7da;
+}
+
+.swiping-right {
+  transform: translateX(50px);
+  background-color: #d4edda;
+}
+.user-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  background-color: #f9f9f9;
+}
+
+.badge {
+  font-size: 0.8rem;
+}
+
+.list-group {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.custom-input {
+  padding: 10px 15px; /* Default padding */
+  border-radius: 25px; /* Rounded corners */
+  border: 1px solid #ccc;
+  height: 45px; /* Fixed height */
+  width: 100%; /* Initially take full width */
+  font-size: 1rem;
+  transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
+}
+
+.custom-input:focus {
+  height: 60px; /* Increase height when focused */
+  width: 110%; /* Increase width when focused (breathing effect) */
+  border-color: #007bff; /* Highlight border color */
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.2); /* Add a soft blue shadow */
+  outline: none; /* Remove default focus outline */
+}

@@ -1,0 +1,49 @@
+.ad-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ad-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.ad-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ad-message {
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.ad-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ad-btn:hover {
+  background-color: #0056b3;
+}

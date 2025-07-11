@@ -1,0 +1,147 @@
+/* CSS for recoil animations */
+@keyframes leftRecoil {
+    0% {
+      transform: translateX(-100%); /* Move out to the left */
+    }
+    25% {
+      transform: translateX(-30px); /* Slightly recoil back */
+    }
+    50% {
+      transform: translateX(20px); /* Move slightly back to the right */
+    }
+    75% {
+      transform: translateX(-10px); /* Another slight recoil */
+    }
+    100% {
+      transform: translateX(0); /* Return to the original position */
+    }
+  }
+  
+  @keyframes rightRecoil {
+    0% {
+      transform: translateX(100%); /* Move out to the right */
+    }
+    25% {
+      transform: translateX(30px); /* Slightly recoil back */
+    }
+    50% {
+      transform: translateX(-20px); /* Move slightly back to the left */
+    }
+    75% {
+      transform: translateX(10px); /* Another slight recoil */
+    }
+    100% {
+      transform: translateX(0); /* Return to the original position */
+    }
+  }
+  .user-main-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .search-bar {
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 75px;
+    z-index: 1;
+    width: 70%;
+    right: 15%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-list-container {
+    overflow-y: auto; /* Allow scrolling if the user list is too long */
+    flex-grow: 1; /* Take up remaining space */
+    padding: 10px 0;
+    margin-top: 2.6rem;
+  }
+  
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .search-bar {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .search-bar.hidden {
+    transform: translateY(-100%);
+  }
+  .search-bar {
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    position: fixed;
+    top: 70px;
+    z-index: 10;
+    width: 70dvw;
+    right: 15%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .search-bar.hidden {
+    transform: translateY(-100%);
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-list-container {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 10px 0;
+    margin-top: 2.6rem; /* offset for fixed search bar */
+    height: calc(100vh - 75px); /* adjust for scroll area */
+  }
+  
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .modern-search-bar {
+    position: fixed;
+    top: 70px;
+    right: 10%;
+    width: 80%;
+    z-index: 10;
+    padding: 8px;
+    background-color: #eef3f8; /* Soft bluish-gray */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .modern-search-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .modern-search-input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #3f8efc50; /* Light blue ring on focus */
+  }
