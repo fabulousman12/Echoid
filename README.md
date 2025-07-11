@@ -24,6 +24,18 @@
 
 ---
 
+## ⚠️ Disclaimer
+
+> This project was developed solo over the course of **4–5 months** — as both a learning experience and a production-grade prototype. It’s my **first major Ionic Android project**, and naturally, the codebase has grown large and somewhat messy in places.
+
+- Some files or variables might be **leftover**, unused, or not fully cleaned up. This is unintentional, and may cause confusion when reading through the code.
+- If you come across any unclear or redundant sections — **don’t overthink it**. They may simply be stubs from testing or earlier features I didn’t have time to clean up.
+- I hope to revisit and refactor the codebase in the future, but as a solo developer, it takes time and energy — especially alongside academics.
+
+I appreciate your patience and understanding. Feel free to open issues or PRs to help improve the project!
+
+---
+
 ## 🚀 Getting Started
 
 ### 📦 Install Dependencies
